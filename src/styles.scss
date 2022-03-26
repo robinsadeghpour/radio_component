@@ -1,0 +1,42 @@
+// GENERAL
+:root {
+  --primary: rgba(26, 34, 48);
+  --secondary: rgba(21, 25, 37);
+  --accent: rgba(142, 130, 83);
+  --font: rgba(151, 187, 203);
+}
+
+// LAYOUT
+.row, .col {
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row.left {
+  justify-content: flex-start;
+}
+
+.col.left {
+  align-items: flex-start;
+}
+
+.row.right {
+  justify-content: flex-end;
+}
+
+.col.right {
+  align-items: flex-end;
+}
