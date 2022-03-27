@@ -1,9 +1,15 @@
 // GENERAL
 :root {
-  --primary: rgba(26, 34, 48);
+  --primary: rgba(41, 42, 53);
   --secondary: rgba(21, 25, 37);
-  --accent: rgba(142, 130, 83);
-  --font: rgba(151, 187, 203);
+  --accent: rgba(238, 172, 95);
+  --font: rgba(159, 168, 186);
+  --basic-white: rgba(255, 255, 255);
+  --border-color: rgba(67, 68, 76);
+  --border-radius: 25px;
+
+  color: var(--font);
+  font-family: Calibri;
 }
 
 // LAYOUT

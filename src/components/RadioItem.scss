@@ -1,0 +1,18 @@
+.RadioItem {
+  padding-bottom: 10px;
+  font-size: large;
+  border-bottom: 1px solid var(--border-color);
+
+  div:last-child {
+    margin-left: auto;
+  }
+}
+
+.RadioName {
+  justify-self: flex-start;
+}
+
+.RadioFrequency {
+  justify-self: flex-end;
+  font-weight: bold;
+}
