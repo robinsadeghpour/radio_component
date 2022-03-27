@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CurrentRadioDisplay = (props : {radioName: string}) => {
+const CurrentRadioDisplay = (props: { radioName: string }) => {
     return (
         <div>
             {props.radioName}

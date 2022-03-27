@@ -1,12 +1,11 @@
-import React, {Component, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './RadioComponent.scss'
 import RadioList from "./RadioList";
-import { Radio } from '../model/Radio'
+import {Radio} from '../model/Radio'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronLeft, faPowerOff} from "@fortawesome/free-solid-svg-icons";
 import axios, {AxiosResponse} from "axios";
 import CurrentRadioDisplay from "./CurrentRadioDisplay";
-import {Exception} from "sass";
 
 export const RadioComponent = () => {
 
@@ -26,9 +25,9 @@ export const RadioComponent = () => {
     return (
         <div className='RadioComponentWrapper col'>
             <div className='RadioComponentHeader row center'>
-                <FontAwesomeIcon icon={faChevronLeft} />
+                <FontAwesomeIcon icon={faChevronLeft}/>
                 <div className='RadioComponentHeaderTitle center'>STATIONS</div>
-                <FontAwesomeIcon icon={faPowerOff} />
+                <FontAwesomeIcon icon={faPowerOff}/>
             </div>
             <RadioList radios={radios} setCurrentRadio={setCurrentRadio}/>
             <div className='RadioComponentFooter center'>
