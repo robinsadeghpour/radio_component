@@ -9,7 +9,7 @@
   --border-radius: 25px;
 
   color: var(--font);
-  font-family: Calibri;
+  font-family: Calibri, serif;
 }
 
 // LAYOUT
@@ -29,6 +29,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .row.left {

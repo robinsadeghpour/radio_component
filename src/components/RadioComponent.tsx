@@ -29,7 +29,8 @@ export const RadioComponent = () => {
                 <div className='RadioComponentHeaderTitle center'>STATIONS</div>
                 <FontAwesomeIcon icon={faPowerOff}/>
             </div>
-            <RadioList radios={radios} setCurrentRadio={setCurrentRadio}/>
+            <RadioList radios={radios} setCurrentRadio={setCurrentRadio}
+                       currentRadioName={currentRadio ? currentRadio.name : ''}/>
             <div className='RadioComponentFooter center'>
                 {currentRadio &&
                     <CurrentRadioDisplay radioName={currentRadio.name}/>

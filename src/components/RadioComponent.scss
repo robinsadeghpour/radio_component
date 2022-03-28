@@ -1,25 +1,26 @@
 .RadioComponentWrapper {
   height: 400px;
-  width: 300px;
+  width: 280px;
   background-color: var(--primary);
   border-radius: var(--border-radius);
 }
 
 .RadioComponentHeader {
-  height: 15%;
+  height: 20%;
   background-color: var(--accent);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
   color: var(--basic-white);
 
   .RadioComponentHeaderTitle {
-    flex-basis:  80%;
+    flex-basis: 80%;
     font-size: 1.5rem;
     font-weight: bold;
   }
 }
 
 .RadioComponentFooter {
-  height: 15%;
+  height: 20%;
   background-color: var(--secondary);
   border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-top: 1px solid var(--border-color);
 }

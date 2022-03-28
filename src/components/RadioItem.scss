@@ -1,11 +1,26 @@
 .RadioItem {
-  padding-bottom: 10px;
-  font-size: large;
+  height: 15%;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  font-size: larger;
+  cursor: pointer;
   border-bottom: 1px solid var(--border-color);
+  user-select: none;
 
   div:last-child {
     margin-left: auto;
   }
+}
+
+.RadioItemActive {
+  display: initial;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.RadioItemInactive {
+  display: none;
 }
 
 .RadioName {
@@ -15,4 +30,11 @@
 .RadioFrequency {
   justify-self: flex-end;
   font-weight: bold;
+}
+
+.RadioItemImage img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--font);
 }
