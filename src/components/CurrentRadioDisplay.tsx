@@ -3,11 +3,11 @@ import './CurrentRadioDisplay.scss';
 
 const CurrentRadioDisplay = (props: { radioName: string }) => {
     return (
-        <div className='CurrentRadioDisplay col center'>
-            <div className='CurrentRadioLabel'>
+        <div className='current-radio-display col center'>
+            <div className='current-radio-label'>
                 CURRENTLY PLAYING
             </div>
-            <div className='CurrentRadioDisplayName'>
+            <div className='current-radio-display-name'>
                 {props.radioName}
             </div>
         </div>

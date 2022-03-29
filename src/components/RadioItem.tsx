@@ -22,20 +22,20 @@ const RadioItem = (props: RadioItemProps) => {
 
     return (
         <div className='col'>
-            <div className='RadioItem row center' onClick={() => handleOnClick(props.radio)}>
-                <div className='RadioName'>
+            <div className='radio-item row center' onClick={() => handleOnClick(props.radio)}>
+                <div className='radio-name'>
                     {props.radio.name}
                 </div>
-                <div className='RadioFrequency'>
+                <div className='radio-frequency'>
                     {props.radio.frequency}
                 </div>
             </div>
             <div
-                className={isCurrentRadioSelected() ? 'RadioItemActive row center space-between' : 'RadioItemInactive'}>
+                className={isCurrentRadioSelected() ? 'radio-item-active row center space-between' : 'radio-item-inactive'}>
                 <div className='col center'>
                     <FontAwesomeIcon icon={faMinusCircle}/>
                 </div>
-                <div className='RadioItemImage col center'>
+                <div className='radio-item-image col center'>
                     <img src={props.radio.image} alt='radio'/>
                 </div>
                 <div className='col center'>

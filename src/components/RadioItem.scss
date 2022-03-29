@@ -1,4 +1,4 @@
-.RadioItem {
+.radio-item {
   height: 15%;
   width: 100%;
   padding-bottom: 0.5rem;
@@ -12,21 +12,21 @@
     margin-left: auto;
   }
 
-  .RadioName {
+  .radio-name {
     justify-self: flex-start;
   }
 
-  .RadioFrequency {
+  .radio-frequency {
     justify-self: flex-end;
     font-weight: bold;
   }
 }
 
-.RadioItemInactive {
+.radio-item-inactive {
   display: none;
 }
 
-.RadioItemActive {
+.radio-item-active {
   display: initial;
   justify-content: space-between;
   margin-top: 0.5rem;
@@ -45,7 +45,7 @@
     }
   }
 
-  .RadioItemImage img {
+  .radio-item-image img {
     height: 100px;
     width: 100px;
     border-radius: 50%;

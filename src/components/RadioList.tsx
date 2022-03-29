@@ -11,7 +11,7 @@ type RadioListProps = {
 
 const RadioList = (props: RadioListProps) => {
     return (
-        <div className='RadioList'>
+        <div className='radio-list'>
             {props.radios.map(radio => {
                 return <RadioItem radio={radio} setCurrentRadio={props.setCurrentRadio} key={radio.frequency}
                                   currentRadioName={props.currentRadioName}/>

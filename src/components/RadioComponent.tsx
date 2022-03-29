@@ -23,15 +23,15 @@ export const RadioComponent = () => {
     }, []);
 
     return (
-        <div className='RadioComponentWrapper col'>
-            <div className='RadioComponentHeader row center'>
+        <div className='radio-component-wrapper col'>
+            <div className='radio-component-header row center'>
                 <FontAwesomeIcon icon={faChevronLeft}/>
-                <div className='RadioComponentHeaderTitle center'>STATIONS</div>
+                <div className='radio-component-header-title center'>STATIONS</div>
                 <FontAwesomeIcon icon={faPowerOff}/>
             </div>
             <RadioList radios={radios} setCurrentRadio={setCurrentRadio}
                        currentRadioName={currentRadio ? currentRadio.name : ''}/>
-            <div className='RadioComponentFooter center'>
+            <div className='radio-component-wrapper center'>
                 {currentRadio &&
                     <CurrentRadioDisplay radioName={currentRadio.name}/>
                 }
