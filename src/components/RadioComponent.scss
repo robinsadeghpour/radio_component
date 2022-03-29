@@ -3,24 +3,24 @@
   width: 280px;
   background-color: var(--primary);
   border-radius: var(--border-radius);
-}
 
-.RadioComponentHeader {
-  height: 20%;
-  background-color: var(--accent);
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  color: var(--basic-white);
+  .RadioComponentHeader {
+    height: 20%;
+    background-color: var(--accent);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    color: var(--basic-white);
 
-  .RadioComponentHeaderTitle {
-    flex-basis: 80%;
-    font-size: 1.5rem;
-    font-weight: bold;
+    .RadioComponentHeaderTitle {
+      width: 80%;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
   }
-}
 
-.RadioComponentFooter {
-  height: 20%;
-  background-color: var(--secondary);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  border-top: var(--thick-border);
+  .RadioComponentFooter {
+    height: 20%;
+    background-color: var(--secondary);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+    border-top: var(--thick-border);
+  }
 }

@@ -11,30 +11,44 @@
   div:last-child {
     margin-left: auto;
   }
-}
 
-.RadioItemActive {
-  display: initial;
-  justify-content: space-between;
-  margin-top: 0.5rem;
+  .RadioName {
+    justify-self: flex-start;
+  }
+
+  .RadioFrequency {
+    justify-self: flex-end;
+    font-weight: bold;
+  }
 }
 
 .RadioItemInactive {
   display: none;
 }
 
-.RadioName {
-  justify-self: flex-start;
-}
+.RadioItemActive {
+  display: initial;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 
-.RadioFrequency {
-  justify-self: flex-end;
-  font-weight: bold;
-}
+  animation: fadeIn var(--fade-in-duration);
+  -webkit-animation: fadeIn var(--fade-in-duration);
+  -moz-animation: fadeIn var(--fade-in-duration);
+  -o-animation: fadeIn var(--fade-in-duration);
 
-.RadioItemImage img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 2px solid var(--font);
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .RadioItemImage img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--font);
+  }
 }

@@ -13,14 +13,10 @@ type RadioItemProps = {
 const RadioItem = (props: RadioItemProps) => {
 
     const handleOnClick = (radio: Radio) => {
-        if (isCurrentRadio()) {
-            props.setCurrentRadio(null);
-            return;
-        }
-        props.setCurrentRadio(radio);
+        props.setCurrentRadio(isCurrentRadioSelected() ? null : radio);
     };
 
-    const isCurrentRadio = () => {
+    const isCurrentRadioSelected = () => {
         return props.currentRadioName === props.radio.name;
     };
 
@@ -34,7 +30,8 @@ const RadioItem = (props: RadioItemProps) => {
                     {props.radio.frequency}
                 </div>
             </div>
-            <div className={isCurrentRadio() ? 'RadioItemActive row center space-between' : 'RadioItemInactive'}>
+            <div
+                className={isCurrentRadioSelected() ? 'RadioItemActive row center space-between' : 'RadioItemInactive'}>
                 <div className='col center'>
                     <FontAwesomeIcon icon={faMinusCircle}/>
                 </div>
