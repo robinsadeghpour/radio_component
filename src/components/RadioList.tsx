@@ -3,7 +3,13 @@ import {Radio} from '../model/Radio'
 import './RadioList.scss';
 import RadioItem from "./RadioItem";
 
-const RadioList = (props: { radios: Radio[], setCurrentRadio: Function, currentRadioName: string }) => {
+type RadioListProps = {
+    radios: Radio[],
+    setCurrentRadio: Function,
+    currentRadioName: string
+};
+
+const RadioList = (props: RadioListProps) => {
     return (
         <div className='RadioList'>
             {props.radios.map(radio => {
@@ -12,6 +18,6 @@ const RadioList = (props: { radios: Radio[], setCurrentRadio: Function, currentR
             })}
         </div>
     );
-}
+};
 
 export default RadioList;

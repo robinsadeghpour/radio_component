@@ -12,6 +12,10 @@
   font-family: Calibri, serif;
 }
 
+html, body, #root, .App {
+  height: 100%
+}
+
 // LAYOUT
 .row, .col {
   display: flex;

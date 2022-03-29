@@ -4,7 +4,13 @@ import {Radio} from "../model/Radio";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMinusCircle, faPlusCircle} from '@fortawesome/free-solid-svg-icons'
 
-const RadioItem = (props: { radio: Radio, setCurrentRadio: Function, currentRadioName: string }) => {
+type RadioItemProps = {
+    radio: Radio,
+    setCurrentRadio: Function,
+    currentRadioName: string
+};
+
+const RadioItem = (props: RadioItemProps) => {
 
     const handleOnClick = (radio: Radio) => {
         if (isCurrentRadio()) {
@@ -12,11 +18,11 @@ const RadioItem = (props: { radio: Radio, setCurrentRadio: Function, currentRadi
             return;
         }
         props.setCurrentRadio(radio);
-    }
+    };
 
     const isCurrentRadio = () => {
         return props.currentRadioName === props.radio.name;
-    }
+    };
 
     return (
         <div className='col'>

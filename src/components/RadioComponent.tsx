@@ -20,7 +20,7 @@ export const RadioComponent = () => {
                         setRadios(response.data.radios);
                     }
                 });
-    }, [])
+    }, []);
 
     return (
         <div className='RadioComponentWrapper col'>
@@ -38,6 +38,6 @@ export const RadioComponent = () => {
             </div>
         </div>
     );
-}
+};
 
 export default RadioComponent;
