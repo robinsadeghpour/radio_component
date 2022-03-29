@@ -38,19 +38,3 @@ html, body, #root, .App {
 .space-between {
   justify-content: space-between;
 }
-
-.row.left {
-  justify-content: flex-start;
-}
-
-.col.left {
-  align-items: flex-start;
-}
-
-.row.right {
-  justify-content: flex-end;
-}
-
-.col.right {
-  align-items: flex-end;
-}
