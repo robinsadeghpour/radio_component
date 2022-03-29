@@ -8,6 +8,9 @@
   --border-color: rgba(67, 68, 76);
   --border-radius: 25px;
 
+  --thin-border: 1px solid var(--border-color);
+  --thick-border: 2px solid var(--border-color);
+
   color: var(--font);
   font-family: Calibri, serif;
 }
