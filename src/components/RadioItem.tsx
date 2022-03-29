@@ -6,18 +6,21 @@ import {faMinusCircle, faPlusCircle} from '@fortawesome/free-solid-svg-icons'
 
 const RadioItem = (props: { radio: Radio, setCurrentRadio: Function, currentRadioName: string }) => {
 
-
     const handleOnClick = (radio: Radio) => {
-        props.currentRadioName === props.radio.name ? props.setCurrentRadio(null) : props.setCurrentRadio(radio)
+        if (isCurrentRadio()) {
+            props.setCurrentRadio(null);
+            return;
+        }
+        props.setCurrentRadio(radio);
     }
 
     const isCurrentRadio = () => {
-        return props.currentRadioName === props.radio.name
+        return props.currentRadioName === props.radio.name;
     }
 
     return (
-        <div className='col' onClick={() => handleOnClick(props.radio)}>
-            <div className='RadioItem row center'>
+        <div className='col'>
+            <div className='RadioItem row center' onClick={() => handleOnClick(props.radio)}>
                 <div className='RadioName'>
                     {props.radio.name}
                 </div>
@@ -27,13 +30,13 @@ const RadioItem = (props: { radio: Radio, setCurrentRadio: Function, currentRadi
             </div>
             <div className={isCurrentRadio() ? 'RadioItemActive row center space-between' : 'RadioItemInactive'}>
                 <div className='col center'>
-                    <FontAwesomeIcon icon={faPlusCircle}/>
+                    <FontAwesomeIcon icon={faMinusCircle}/>
                 </div>
                 <div className='RadioItemImage col center'>
                     <img src={props.radio.image} alt='radio'/>
                 </div>
                 <div className='col center'>
-                    <FontAwesomeIcon icon={faMinusCircle}/>
+                    <FontAwesomeIcon icon={faPlusCircle}/>
                 </div>
             </div>
         </div>
