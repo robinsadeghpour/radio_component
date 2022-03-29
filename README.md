@@ -1,6 +1,6 @@
 # Radio Component
 
-This is a basic React Component, which fetches Radios from an API and displays them.
+This is a basic React Component, which fetches radios from an API and displays them.
 - ![grafik](https://user-images.githubusercontent.com/38283032/160693205-5cd3f709-a956-41af-9acb-9eb41030089a.png)
 - ![grafik](https://user-images.githubusercontent.com/38283032/160693242-132d7ccf-7094-47d5-81df-dc82110d3228.png)
 
